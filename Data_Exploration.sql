@@ -1,4 +1,4 @@
--- 1 Find customers who have never ordered 
+1-- Find customers who have never ordered 
 (SELECT user_id FROM orders) --> All people who orders 
 
 SELECT * FROM users 
