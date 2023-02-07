@@ -1,5 +1,5 @@
 # Swiggy-Case-Study
-
+## Data Exploration in sql 
 1. Find customers who have never ordered
 2. Average Price/dish
 3. Find top restautant in terms of number of orders for Ra given month
