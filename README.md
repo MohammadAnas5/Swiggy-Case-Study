@@ -1,8 +1,10 @@
 # Swiggy Data Analysis
-
+## Business Request & User Stories
+The business request for this data analyst project was an executive sales report for sales managers. Based on the request that was made from the business we following user stories were defined to fulfill delivery and ensure that acceptance criteria’s were maintained throughout the project.
+--- sfsdscsc 
 ## Data Collection and Generation
-## Data Cleaning and Exploration in pandas
-## Advance Data Exploration in sql 
+## Data Cleaning and Exploration (Python pandas)
+## Advance Data Exploration (SQL) 
 1. Find customers who have never ordered
 2. Average Price/dish
 3. Find top restautant in terms of number of orders for Ra given month
