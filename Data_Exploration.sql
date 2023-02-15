@@ -109,3 +109,14 @@ WITH t AS (SELECT r_id,MONTHNAME(date) as Month,SUM(amount) as Revenue
  
 SELECT r_id,Month,((Revenue - LAG(Revenue,1)OVER(ORDER BY Revenue))/Revenue)*100 
 FROM t
+
+12-- Most Paired Products 
+
+SELECT f1.f_name, f2.f_name, COUNT(*) AS pair_count 
+FROM orders o
+JOIN order_details od1 ON o.order_id = od1.order_id
+JOIN order_details od2 ON o.order_id = od2.order_id AND od1.id < od2.id
+JOIN food f1 ON od1.f_id = f1.f_id
+JOIN food f2 ON od2.f_id = f2.f_id AND f1.f_id < f2.f_id
+GROUP BY f1.f_name, f2.f_name
+ORDER BY pair_count DESC;
